@@ -1,0 +1,29 @@
+import pandas as pd
+
+data = [[1, "Chris", 10], [20, "John", 11], [13, "Tysen", 12], [14, "Rock", 9]]
+
+data_frames = pd.DataFrame(data, index=["R1", "R2", "R3", "R4"],
+                                columns=["Roll_No", "Name", "Class"])
+
+print(data_frames[data_frames["Roll_No"]>=1]) # Boolean Attribute if The Dataframe Statifies the Passed value then return true otherwise return false......
+# Renaming in DataFrames.....
+data_frames.rename(index = {"R1":"R2"}, columns={"Roll_No":"Admission_NO"}, inplace=True)
+print(data_frames)
+
+# Saving and reading The File Using CV........
+data_frames.to_csv("DataFrame.csv") # Saving csv file...
+data_frames.to_csv("DataFrame.csv", index=False) #....
+
+data_frames_csv = pd.read_csv("DataFrame.csv") # reading csv file...
+data_frames_csv = pd.read_csv("DataFrame.csv", nrows=1, skiprows=1) # Given The Number of rows that you want and skip the row according to passed attribute.....
+print(data_frames_csv)
+
+# Used to iter the Dataframe along the rows....
+for item in data_frames.iterrows():
+    print(item)
+
+# Used to iter The Dataframe along The columns...
+for item in data_frames.iteritems():
+    print(item)
+
+
