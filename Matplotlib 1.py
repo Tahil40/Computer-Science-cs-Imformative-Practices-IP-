@@ -1,3 +1,8 @@
+'''
+Note = firstly install matplolib library before usage.
+follow this command for installation = pip install matplotlib
+run this command in python intepretr or cmd.
+'''
 # importing Module....
 import matplotlib.pyplot as plt
 
