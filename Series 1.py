@@ -1,3 +1,9 @@
+'''
+Note = firstly install pandas and numpy library before usage.
+follow this command for installation of pandas = pip install pandas 
+follow this command for installation of numpy = pip install numpy
+run this command in python intepretr or cmd.
+'''
 # Importing Module....
 import pandas as pd
 
