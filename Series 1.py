@@ -9,6 +9,9 @@ Series is Type of Dataframe in pandas Library
 series_scalar = pd.Series(20, index=[1, 2, 3, 4, 5])
 print(series_scalar)
 
+series_scalar0 = pd.Series("Harry", index=[1, 2, 3])
+print(series_scalar0)
+
 # Creating Series as List passing integer Datatype....
 series = pd.Series([10, 20, 30, 40, 50])
 
